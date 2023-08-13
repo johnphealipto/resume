@@ -1,9 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import { PDFViewer } from "@react-pdf/renderer";
+import PDFDocument from "./PDFDoc.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <PDFViewer height={1200} width={1000}>
+        <PDFDocument />
+      </PDFViewer>
+    </div>
   </React.StrictMode>
 );
