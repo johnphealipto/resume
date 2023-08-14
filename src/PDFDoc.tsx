@@ -108,7 +108,7 @@ const ExperienceSection = () => {
                       backgroundColor: COLORS.dark,
                       width: 5,
                       height: 5,
-                      borderRadius,
+                      borderRadius: 2.5,
                       marginTop: 3.75,
                     }}
                   />
@@ -157,10 +157,7 @@ const RightView = () => (
       <Text style={styles.text}>
         Professional Frontend Developer with 3+ years of experience in Web and
         Mobile development. My experiences range from creating a reusable and
-        neat codebase to building a user-friendly interface. {"\n"} I tend to
-        work on highly complex projects using React + Vite.JS, Redux Toolkit,
-        and Tailwind CSS also create cross-platform mobile applications using
-        React Native (Expo).
+        neat codebase to building a user-friendly interface.
       </Text>
     </View>
     <View>
@@ -171,6 +168,15 @@ const RightView = () => (
             {skill}
           </Text>
         ))}
+      </View>
+    </View>
+    <View>
+      <SectionTitle title="Education" />
+      <View style={[styles.text, { gap: 3 }]}>
+        <Text>Bachelor of Science (B.sc)</Text>
+        <Text>Mathematics Education</Text>
+        <Text>University of Nigeria, Nsukka</Text>
+        <Text>2013 - 2017</Text>
       </View>
     </View>
     <View>
@@ -225,7 +231,7 @@ const styles = StyleSheet.create({
   },
   title: { fontSize: 14, fontWeight: "semibold", textTransform: "uppercase" },
   subtitle: {
-    fontSize: 12,
+    fontSize: 11.5,
   },
   text: {
     fontSize: 10,
