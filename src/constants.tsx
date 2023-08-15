@@ -15,7 +15,7 @@ export const CONTACTS = [
   // },
   {
     detail: "Ikeja, Lagos State, Nigeria.",
-    icon: <LocationIcon size={ICON_SIZE} />,
+    icon: <LocationIcon size={ICON_SIZE} />, 
   },
 ];
 
@@ -26,7 +26,7 @@ export const EXPERIENCES = [
     start: "Apr 2022",
     end: "Present",
     description: [
-      // "Worked closely with ",
+      "Worked closely with the backend developers to integrate and consume GraphQL APIs, ensuring seamless communication between the frontend and backend systems.",
       "Collaborated with UI/UX design team members to improve existing applications and implement new feature developments.",
       "Built extensive test coverage with Jest for new features, reducing the number of client complaints by 15%.",
     ],

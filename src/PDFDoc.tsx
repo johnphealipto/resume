@@ -10,7 +10,7 @@ import {
 import Light from "./assets/fonts/Rubik-Light.ttf";
 import SemiBold from "./assets/fonts/Rubik-SemiBold.ttf";
 import Italic from "./assets/fonts/Rubik-Italic.ttf";
-import Avatar from "./assets/images/avatar.png";
+import Avatar from "./assets/images/profile.jpg";
 import { COLORS } from "./assets/colors";
 import { CONTACTS, EXPERIENCES, SKILLS } from "./constants";
 
@@ -34,7 +34,7 @@ Font.register({
 const borderRadius = 2;
 
 const SectionTitle = ({ title }: { title: string }) => (
-  <View style={{ marginBottom: 8 }}>
+  <View style={{ marginBottom: 4.5 }}>
     <Text style={styles.title}>{title}</Text>
   </View>
 );
@@ -70,7 +70,7 @@ const ExperienceSection = () => {
   return (
     <View style={{ width: 370 }}>
       <SectionTitle title="Experience" />
-      <View style={{ gap: 25 }}>
+      <View style={{ gap: 25, marginTop: 3 }}>
         {EXPERIENCES.map((item, idx) => (
           <View key={idx}>
             <View
@@ -100,16 +100,16 @@ const ExperienceSection = () => {
             <Text style={[styles.subtitle, { marginTop: 2 }]}>
               {item.company}
             </Text>
-            <View style={{ gap: 3.5, marginTop: 8 }}>
+            <View style={{ gap: 3.5, marginTop: 8, marginLeft: 5 }}>
               {item.description.map((desc, idx) => (
                 <View key={idx} style={{ flexDirection: "row", gap: 8 }}>
                   <View
                     style={{
                       backgroundColor: COLORS.dark,
-                      width: 5,
-                      height: 5,
-                      borderRadius: 2.5,
-                      marginTop: 3.75,
+                      width: 4,
+                      height: 4,
+                      borderRadius: 2,
+                      marginTop: 4,
                     }}
                   />
                   <Text style={[styles.text, { flex: 1 }]}>{desc}</Text>
@@ -151,13 +151,14 @@ const LeftView = () => (
 );
 
 const RightView = () => (
-  <View style={{ marginLeft: 15, flex: 1, gap: 35 }}>
+  <View style={{ marginLeft: 15, flex: 1, gap: 30 }}>
     <View>
       <SectionTitle title="Profile" />
-      <Text style={styles.text}>
-        Professional Frontend Developer with 3+ years of experience in Web and
-        Mobile development. My experiences range from creating a reusable and
-        neat codebase to building a user-friendly interface.
+      <Text style={[styles.text, { lineHeight: 1.45 }]}>
+        Enthusiastic frontend developer with over 3 years experience building
+        responsive websites and web applications using React.JS, with a
+        particular passion for developing innovative UI/UX solutions. I look
+        forward to applying this experience and more in my next role.
       </Text>
     </View>
     <View>
