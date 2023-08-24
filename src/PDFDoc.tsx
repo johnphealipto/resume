@@ -155,7 +155,7 @@ const RightView = () => (
     <View>
       <SectionTitle title="Profile" />
       <Text style={[styles.text, { lineHeight: 1.45 }]}>
-        Enthusiastic frontend developer with over 3 years experience building
+        Enthusiastic frontend developer with over 3 years of experience building
         responsive websites and web applications using React.JS, with a
         particular passion for developing innovative UI/UX solutions. I look
         forward to applying this experience and more in my next role.

@@ -38,14 +38,14 @@ export const EXPERIENCES = [
     end: "May 2022",
     description: [
       "Updated the company's website with responsive layouts and page optimization resulting in a faster load time.",
-      "Developed new React components with Redux for the staff management web application, increasing the HR team work efficiency by 25%.",
-      "Created a UI and UX friendly web application to manage customer's relationship and records, achieving over 80% customer satisfaction and improving contact agent's recovery rate.",
+      "Developed new React components with Redux for the staff management web application, increasing the HR team's work efficiency by 25%.",
+      "Created a UI and UX-friendly web application to manage customer relationships and records, achieving over 80% customer satisfaction and improving contact agent's recovery rate.",
     ],
   },
   {
     title: "Frontend Developer",
     company: "Freelance",
-    start: "March 2020",
+    start: "Mar 2020",
     end: "Jan 2023",
     description: [
       "Implemented websites, mobile applications, and landing pages from concept through deployment.",
