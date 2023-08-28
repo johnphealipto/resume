@@ -98,7 +98,8 @@ const ExperienceSection = () => {
               </View>
             </View>
             <Text style={[styles.subtitle, { marginTop: 2 }]}>
-              {item.company}
+              {item.company}{" "}
+              <Text style={{ opacity: 0.75 }}>| {item.location}</Text>
             </Text>
             <View style={{ gap: 3.5, marginTop: 8, marginLeft: 5 }}>
               {item.description.map((desc, idx) => (
@@ -137,7 +138,7 @@ const LeftView = () => (
       <Image
         src={Avatar}
         style={{
-          width: 130,
+          width: 150,
           height: 200,
           objectFit: "cover",
           borderRadius,
@@ -156,9 +157,9 @@ const RightView = () => (
       <SectionTitle title="Profile" />
       <Text style={[styles.text, { lineHeight: 1.45 }]}>
         Enthusiastic frontend developer with over 3 years of experience building
-        responsive websites and web applications using React.JS, with a
+        responsive and scalable websites and web applications, with a
         particular passion for developing innovative UI/UX solutions. I look
-        forward to applying this experience and more in my next role.
+        forward to applying this experience in my next role.
       </Text>
     </View>
     <View>
@@ -171,6 +172,16 @@ const RightView = () => (
         ))}
       </View>
     </View>
+    {/* <View>
+      <SectionTitle title="Projects" />
+      <View style={{ gap: 5 }}>
+        {SKILLS.map((skill, idx) => (
+          <Text key={idx} style={styles.text}>
+            {skill}
+          </Text>
+        ))}
+      </View>
+    </View> */}
     <View>
       <SectionTitle title="Education" />
       <View style={[styles.text, { gap: 3 }]}>

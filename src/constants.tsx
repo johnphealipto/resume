@@ -23,6 +23,7 @@ export const EXPERIENCES = [
   {
     title: "Software Developer",
     company: "Clinify INC",
+    location: "Alberta, Canada (Remote).",
     start: "Apr 2022",
     end: "Present",
     description: [
@@ -34,6 +35,7 @@ export const EXPERIENCES = [
   {
     title: "Frontend Developer",
     company: "Outcess LTD",
+    location: "Opebi, Lagos.",
     start: "Sep 2020",
     end: "May 2022",
     description: [
@@ -45,12 +47,13 @@ export const EXPERIENCES = [
   {
     title: "Frontend Developer",
     company: "Freelance",
+    location: "Ikeja, Lagos.",
     start: "Mar 2020",
     end: "Jan 2023",
     description: [
       "Implemented websites, mobile applications, and landing pages from concept through deployment.",
       "Standardized all output with a new, responsive, mobile-first approach and strategy.",
-      "Assessed UX and UI designs for technical feasibility.",
+      // "Assessed UX and UI designs for technical feasibility.",
       // "Developed standard and ad hoc reports in graph format as required.",
       // "Collaborated with product team members to implement new feature developments.",
     ],
