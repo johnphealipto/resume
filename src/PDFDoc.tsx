@@ -113,7 +113,12 @@ const ExperienceSection = () => {
                       marginTop: 4,
                     }}
                   />
-                  <Text style={[styles.text, { flex: 1 }]}>{desc}</Text>
+                  <Text
+                    style={[styles.text, { flex: 1 }]}
+                    hyphenationCallback={(word) => [word]}
+                  >
+                    {desc}
+                  </Text>
                 </View>
               ))}
             </View>
@@ -155,11 +160,14 @@ const RightView = () => (
   <View style={{ marginLeft: 15, flex: 1, gap: 30 }}>
     <View>
       <SectionTitle title="Profile" />
-      <Text style={[styles.text, { lineHeight: 1.45 }]}>
+      <Text
+        style={[styles.text, { lineHeight: 1.45 }]}
+        hyphenationCallback={(word) => [word]}
+      >
         Enthusiastic frontend developer with over 3 years of experience building
-        responsive and scalable websites and web applications, with a
-        particular passion for developing innovative UI/UX solutions. I look
-        forward to applying this experience in my next role.
+        responsive and scalable web applications, with a particular passion for
+        developing innovative UI/UX solutions. I look forward to applying this
+        experience in my next role.
       </Text>
     </View>
     <View>
