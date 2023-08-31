@@ -27,9 +27,9 @@ export const EXPERIENCES = [
     start: "Apr 2022",
     end: "Present",
     description: [
-      "Worked closely with the backend developers to integrate and consume GraphQL APIs, ensuring seamless communication between the frontend and backend systems.",
+      "Worked closely with the backend developers to integrate GraphQL APIs, ensuring seamless communication between the frontend and backend systems.",
       "Collaborated with UI/UX design team members to improve existing applications and implement new feature developments.",
-      "Built extensive test coverage with Jest for new features, reducing the number of client complaints by 15%.",
+      "Built extensive test coverage with Jest for new features.",
     ],
   },
   {
@@ -40,7 +40,7 @@ export const EXPERIENCES = [
     end: "May 2022",
     description: [
       "Updated the company's website with responsive layouts and page optimization resulting in a faster load time.",
-      "Developed new React components with Redux for the staff management web application, increasing the HR team's work efficiency by 25%.",
+      "Developed new React components for the staff management web application, increasing the HR team's work efficiency.",
       "Created a UI and UX-friendly web application to manage customer relationships and records, achieving over 80% customer satisfaction and improving contact agent's recovery rate.",
     ],
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { PDFViewer } from "@react-pdf/renderer";
-import PDFDocument from "./PDFDoc.tsx";
+import PDFDocument from "./Document.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

@@ -220,7 +220,11 @@ const RightView = () => (
 
 const PDFDocument = () => {
   return (
-    <Document author="John Adibe" creator="John Adibe">
+    <Document
+      author="John Adibe"
+      creator="John Adibe"
+      title="John Adibe [Resumé]"
+    >
       <Page style={styles.body} size="A4" wrap>
         <View style={{ flexDirection: "row", height: "100%" }}>
           <LeftView />
