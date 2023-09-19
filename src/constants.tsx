@@ -25,7 +25,7 @@ export const EXPERIENCES = [
     company: "Clinify INC",
     location: "Alberta, Canada (Remote).",
     start: "Apr 2022",
-    end: "Present",
+    end: "Sept 2023",
     description: [
       "Worked closely with the backend developers to integrate GraphQL APIs, ensuring seamless communication between the frontend and backend systems.",
       "Collaborated with UI/UX design team members to improve existing applications and implement new feature developments.",
