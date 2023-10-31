@@ -10,7 +10,7 @@ import {
 import Light from "./assets/fonts/Rubik-Light.ttf";
 import SemiBold from "./assets/fonts/Rubik-SemiBold.ttf";
 import Italic from "./assets/fonts/Rubik-Italic.ttf";
-import Avatar from "./assets/images/profile.jpg";
+import Profile from "./assets/profile.png";
 import { COLORS } from "./assets/colors";
 import { CONTACTS, EXPERIENCES, SKILLS } from "./constants";
 
@@ -30,8 +30,6 @@ Font.register({
     },
   ],
 });
-
-const borderRadius = 2;
 
 const SectionTitle = ({ title }: { title: string }) => (
   <View style={{ marginBottom: 4.5 }}>
@@ -54,7 +52,7 @@ const ContactSection = () => {
               height: 20,
               justifyContent: "center",
               alignItems: "center",
-              borderRadius,
+              borderRadius: 2,
             }}
           >
             {item.icon}
@@ -133,7 +131,7 @@ const LeftView = () => (
   <View style={{ paddingRight: 20 }}>
     <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
       <View style={{ justifyContent: "space-between" }}>
-        <View style={{ fontSize: 38, lineHeight: 0.9 }}>
+        <View style={{ fontSize: 38, lineHeight: 0.9, marginBottom: 35 }}>
           <Text style={{ fontSize: 38.3, fontWeight: "semibold" }}>JOHN</Text>
           <Text>ADIBE</Text>
           <Text style={{ fontSize: 16, marginTop: 8 }}>Frontend Developer</Text>
@@ -141,12 +139,12 @@ const LeftView = () => (
         <ContactSection />
       </View>
       <Image
-        src={Avatar}
+        src={Profile}
         style={{
           width: 150,
           height: 200,
           objectFit: "cover",
-          borderRadius,
+          borderRadius: 20,
         }}
       />
     </View>

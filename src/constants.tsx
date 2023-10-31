@@ -1,10 +1,15 @@
 /* eslint-disable react-refresh/only-export-components */
-import { EnvelopeIcon, LocationIcon, PhoneIcon } from "./assets/icons";
+import {
+  EnvelopeIcon,
+  // LinkIcon,
+  LocationIcon,
+  PhoneIcon,
+} from "./assets/icons";
 
 const ICON_SIZE = 10;
 
 export const CONTACTS = [
-  { detail: "+234-814-172-6099", icon: <PhoneIcon size={ICON_SIZE} /> },
+  { detail: "(234) 814-172-6099", icon: <PhoneIcon size={ICON_SIZE} /> },
   {
     detail: "johnadibe450@gmail.com",
     icon: <EnvelopeIcon size={ICON_SIZE} />,
@@ -14,7 +19,7 @@ export const CONTACTS = [
   //   icon: <LinkIcon size={ICON_SIZE} />,
   // },
   {
-    detail: "Ikeja, Lagos State, Nigeria.",
+    detail: "Lagos, Nigeria.",
     icon: <LocationIcon size={ICON_SIZE} />,
   },
 ];
