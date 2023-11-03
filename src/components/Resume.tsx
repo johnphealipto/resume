@@ -5,14 +5,14 @@ import {
   Text,
   View,
   StyleSheet,
-  Image,
+  // Image,
 } from "@react-pdf/renderer";
-import Light from "./assets/fonts/Rubik-Light.ttf";
-import SemiBold from "./assets/fonts/Rubik-SemiBold.ttf";
-import Italic from "./assets/fonts/Rubik-Italic.ttf";
-import Profile from "./assets/profile.png";
-import { COLORS } from "./assets/colors";
-import { CONTACTS, EXPERIENCES, SKILLS } from "./constants";
+import Light from "../assets/fonts/Rubik-Light.ttf";
+import SemiBold from "../assets/fonts/Rubik-SemiBold.ttf";
+import Italic from "../assets/fonts/Rubik-Italic.ttf";
+// import Profile from "./assets/profile.png";
+import { COLORS } from "../assets/colors";
+import { CONTACTS, EXPERIENCES, SKILLS } from "../constants";
 
 Font.register({
   family: "Rubik",
@@ -134,19 +134,19 @@ const LeftView = () => (
         <View style={{ fontSize: 38, lineHeight: 0.9, marginBottom: 35 }}>
           <Text style={{ fontSize: 38.3, fontWeight: "semibold" }}>JOHN</Text>
           <Text>ADIBE</Text>
-          <Text style={{ fontSize: 16, marginTop: 8 }}>Frontend Developer</Text>
+          <Text style={{ fontSize: 16, marginTop: 10 }}>Frontend Engineer</Text>
         </View>
         <ContactSection />
       </View>
-      <Image
+      {/* <Image
         src={Profile}
         style={{
           width: 150,
           height: 200,
           objectFit: "cover",
-          borderRadius: 20,
+          borderRadius: 2,
         }}
-      />
+      /> */}
     </View>
     <View style={{ marginTop: 50 }}>
       <ExperienceSection />
@@ -162,10 +162,10 @@ const RightView = () => (
         style={[styles.text, { lineHeight: 1.45 }]}
         hyphenationCallback={(word) => [word]}
       >
-        Enthusiastic frontend developer with over 3 years of experience building
-        responsive and scalable web applications, with a particular passion for
-        developing innovative UI/UX solutions. I look forward to applying this
-        experience in my next role.
+        Frontend developer with 3+ years of experience building responsive and
+        scalable web and mobile applications, with a particular passion for
+        developing innovative UI & UX solutions. Highly experienced in
+        Javascript, Typescript, HTML and modern CSS.
       </Text>
     </View>
     <View>
@@ -178,16 +178,6 @@ const RightView = () => (
         ))}
       </View>
     </View>
-    {/* <View>
-      <SectionTitle title="Projects" />
-      <View style={{ gap: 5 }}>
-        {SKILLS.map((skill, idx) => (
-          <Text key={idx} style={styles.text}>
-            {skill}
-          </Text>
-        ))}
-      </View>
-    </View> */}
     <View>
       <SectionTitle title="Education" />
       <View style={[styles.text, { gap: 3 }]}>
@@ -216,7 +206,7 @@ const RightView = () => (
   </View>
 );
 
-const PDFDocument = () => {
+const Resume = () => {
   return (
     <Document
       author="John Adibe"
@@ -241,7 +231,7 @@ const PDFDocument = () => {
   );
 };
 
-export default PDFDocument;
+export default Resume;
 
 const styles = StyleSheet.create({
   body: {

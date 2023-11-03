@@ -56,11 +56,9 @@ export const EXPERIENCES = [
     start: "Mar 2020",
     end: "Jan 2023",
     description: [
-      "Implemented websites, mobile applications, and landing pages from concept through deployment.",
-      "Standardized all output with a new, responsive, mobile-first approach and strategy.",
-      // "Assessed UX and UI designs for technical feasibility.",
-      // "Developed standard and ad hoc reports in graph format as required.",
-      // "Collaborated with product team members to implement new feature developments.",
+      "Successfully completed 8+ projects, showcasing diverse software solutions for clients across various industries.",
+      "Maintained 80% satisfaction rate by delivering high-quality, customized applications on time and within budget.",
+      "Established effective remote collaboration practices, enabling smooth communication and seamless project execution with clients.",
     ],
   },
 ];
