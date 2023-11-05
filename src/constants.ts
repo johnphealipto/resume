@@ -6,13 +6,11 @@ import {
   PhoneIcon,
 } from "./assets/icons";
 
-const ICON_SIZE = 10;
-
 export const CONTACTS = [
-  { detail: "(234) 814-172-6099", icon: <PhoneIcon size={ICON_SIZE} /> },
+  { detail: "(234) 814-172-6099", icon: PhoneIcon },
   {
     detail: "johnadibe450@gmail.com",
-    icon: <EnvelopeIcon size={ICON_SIZE} />,
+    icon: EnvelopeIcon,
   },
   // {
   //   detail: "https://www.linkedin.com/in/johnadibe/",
@@ -20,7 +18,7 @@ export const CONTACTS = [
   // },
   {
     detail: "Lagos, Nigeria.",
-    icon: <LocationIcon size={ICON_SIZE} />,
+    icon: LocationIcon,
   },
 ];
 

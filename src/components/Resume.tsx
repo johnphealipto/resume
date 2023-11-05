@@ -5,12 +5,10 @@ import {
   Text,
   View,
   StyleSheet,
-  // Image,
 } from "@react-pdf/renderer";
 import Light from "../assets/fonts/Rubik-Light.ttf";
 import SemiBold from "../assets/fonts/Rubik-SemiBold.ttf";
 import Italic from "../assets/fonts/Rubik-Italic.ttf";
-// import Profile from "./assets/profile.png";
 import { COLORS } from "../assets/colors";
 import { CONTACTS, EXPERIENCES, SKILLS } from "../constants";
 
@@ -36,33 +34,6 @@ const SectionTitle = ({ title }: { title: string }) => (
     <Text style={styles.title}>{title}</Text>
   </View>
 );
-
-const ContactSection = () => {
-  return (
-    <View style={{ gap: 5 }}>
-      {CONTACTS.map((item, idx) => (
-        <View
-          key={idx}
-          style={{ flexDirection: "row", alignItems: "center", gap: 8 }}
-        >
-          <View
-            style={{
-              backgroundColor: COLORS.dark,
-              width: 20,
-              height: 20,
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: 2,
-            }}
-          >
-            {item.icon}
-          </View>
-          <Text style={styles.text}>{item.detail}</Text>
-        </View>
-      ))}
-    </View>
-  );
-};
 
 const ExperienceSection = () => {
   return (
@@ -129,33 +100,54 @@ const ExperienceSection = () => {
 
 const LeftView = () => (
   <View style={{ paddingRight: 20 }}>
-    <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-      <View style={{ justifyContent: "space-between" }}>
-        <View style={{ fontSize: 38, lineHeight: 0.9, marginBottom: 35 }}>
-          <Text style={{ fontSize: 38.3, fontWeight: "semibold" }}>JOHN</Text>
-          <Text>ADIBE</Text>
-          <Text style={{ fontSize: 16, marginTop: 10 }}>Frontend Engineer</Text>
-        </View>
-        <ContactSection />
-      </View>
-      {/* <Image
-        src={Profile}
+    <View
+      style={{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginBottom: 35,
+      }}
+    >
+      <View
         style={{
-          width: 150,
-          height: 200,
-          objectFit: "cover",
-          borderRadius: 2,
+          fontSize: 38,
+          lineHeight: 0.9,
         }}
-      /> */}
+      >
+        <Text style={{ fontSize: 38.3, fontWeight: "semibold" }}>JOHN</Text>
+        <Text>ADIBE</Text>
+        <Text style={{ fontSize: 16, marginTop: 15 }}>Frontend Engineer</Text>
+      </View>
+      <View style={{ gap: 5, alignItems: "flex-end", marginTop: 9 }}>
+        {CONTACTS.map((item, idx) => (
+          <View
+            key={idx}
+            style={{ flexDirection: "row", alignItems: "center", gap: 8 }}
+          >
+            <Text style={styles.text}>{item.detail}</Text>
+            <View
+              style={{
+                backgroundColor: COLORS.dark,
+                width: 20,
+                height: 20,
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 2,
+              }}
+            >
+              <item.icon size={10} />
+            </View>
+          </View>
+        ))}
+      </View>
     </View>
-    <View style={{ marginTop: 50 }}>
+    <View style={{ marginTop: 25 }}>
       <ExperienceSection />
     </View>
   </View>
 );
 
 const RightView = () => (
-  <View style={{ marginLeft: 15, flex: 1, gap: 30 }}>
+  <View style={{ marginLeft: 15, flex: 1, gap: 25, marginTop: 9 }}>
     <View>
       <SectionTitle title="Profile" />
       <Text

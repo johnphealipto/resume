@@ -82,7 +82,7 @@ const Letter = () => {
                     borderRadius: 2,
                   }}
                 >
-                  {item.icon}
+                  <item.icon size={10} />
                 </View>
               </View>
             ))}
