@@ -102,15 +102,15 @@ const Letter = () => {
           <View style={{ marginBottom: 30 }}>
             <Text style={[styles.medium, { fontStyle: "italic" }]}>To:</Text>
             <Text style={{ fontSize: 14 }}>Hiring Manager</Text>
-            <Text style={{ fontSize: 14 }}>Spatial Front INC.</Text>
+            <Text style={{ fontSize: 14 }}>[company name]</Text>
           </View>
           <Paragraph>Dear Hiring Manager,</Paragraph>
           <Paragraph>
             I am writing to express my genuine interest in joining your team as
             a Senior Front End Developer. As a passionate developer with a
             strong background in front-end technologies, I am excited about the
-            opportunity to contribute to Spatial Front's innovative projects and
-            collaborate with your talented team.
+            opportunity to contribute to [company name]'s innovative projects
+            and collaborate with your talented team.
           </Paragraph>
           <Paragraph>
             Over the years, I have honed my skills in JavaScript, Typescript,
@@ -118,11 +118,11 @@ const Letter = () => {
             React.js. I have had the privilege of working on projects that
             demanded not only technical excellence but also a keen eye for user
             experience and design. I am confident that my expertise can help
-            Spatial Front continues to create exceptional user interfaces and
+            [company name] continues to create exceptional user interfaces and
             web applications.
           </Paragraph>
-          <Paragraph>
-            What particularly excites me about Spatial Front INC is your
+          {/* <Paragraph>
+            What particularly excites me about [company name] is your
             commitment to bringing together innovative technologies,
             industry-best practices, and top-notch personnel to address the
             nation's most critical needs. Also, your dedication to becoming the
@@ -131,16 +131,16 @@ const Letter = () => {
             has done, particularly the Artificial Intelligence-Driven Data
             Enhancement Platform with Natural Language Enabled (ADELE) project
             which pushes the boundaries of technology.
-          </Paragraph>
+          </Paragraph> */}
           <Paragraph>
-            I am eager to learn more about opportunities at Spatial Front and
+            I am eager to learn more about opportunities at [company name] and
             how I can contribute to your mission. Please feel free to reach out
             to me at johnadibe450@gmail.com or +2348141726099 to discuss how my
             skills align with your current projects and goals.
           </Paragraph>
           <Paragraph>
             Thank you for considering my application. I look forward to the
-            possibility of becoming a part of Spatial Front's innovative team.
+            possibility of becoming a part of [company name]'s innovative team.
           </Paragraph>
           <Paragraph>Sincerely, {"\n"} John Adibe</Paragraph>
         </View>

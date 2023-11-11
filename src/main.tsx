@@ -12,10 +12,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         justifyContent: "space-around",
       }}
     >
-      <PDFViewer height={1000} width={800}>
+      <PDFViewer height={1100} width={800}>
         <Resume />
       </PDFViewer>
-      <PDFViewer height={1000} width={800}>
+      <PDFViewer height={1100} width={800}>
         <Letter />
       </PDFViewer>
     </div>
