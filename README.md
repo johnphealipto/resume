@@ -4,8 +4,8 @@ This template is built with [React-pdf](https://react-pdf.org/) powered by React
 
 ## Running Locally
 ```sh-session
-git clone https://github.com/johnphealipto/portfolio.git
-cd portfolio
+git clone https://github.com/johnphealipto/resume-and-letter.git
+cd resume-and-letter
 ```
 
 Then install dependencies and run the development server:
@@ -14,3 +14,7 @@ Then install dependencies and run the development server:
 yarn
 yarn dev
 ```
+
+![Alt text](./src/assets/resume-and-letter.png)
+
+PS: Please remove all of my personal information (experience, skills, profile etc.) if you must use this template.
