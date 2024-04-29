@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import {
   EnvelopeIcon,
-  // LinkIcon,
+  LinkIcon,
   LocationIcon,
   PhoneIcon,
 } from "./assets/icons";
@@ -9,30 +9,57 @@ import {
 export const CONTACTS = [
   { detail: "(234) 814-172-6099", icon: PhoneIcon },
   {
-    detail: "johnadibe450@gmail.com",
+    detail: "john.adibe.ebube@gmail.com",
     icon: EnvelopeIcon,
   },
-  // {
-  //   detail: "https://www.linkedin.com/in/johnadibe/",
-  //   icon: <LinkIcon size={ICON_SIZE} />,
-  // },
   {
-    detail: "Lagos, Nigeria.",
+    detail: "https://johnadibe.vercel.app",
+    icon: LinkIcon,
+  },
+  {
+    detail: "Anambra, Nigeria.",
     icon: LocationIcon,
+  },
+];
+
+export const EDUCATIONS = [
+  {
+    certificate: "B.Sc / Mathematics Education",
+    school: "University of Nigeria, Nsukka",
+    duration: "Jul 2017",
+    grade: "Second Class Honours (Upper Division)",
+    project:
+      "Accessing the usability of questioning skills in teaching and learning of Mathematics in senior secondary schools at Onitsha South L.G.A Anambra State.",
+  },
+  {
+    certificate: "West African Examinations Council (WAEC)",
+    school: "Tansi International College, Awka",
+    duration: "Jun 2013",
   },
 ];
 
 export const EXPERIENCES = [
   {
+    title: "Frontend Developer",
+    company: "Product Studio Limited",
+    location: "Lagos, Nigeria (Remote).",
+    start: "Nov 2023",
+    end: "till date",
+    description: [
+      "Spearheading 3+ projects from conception to deployment, focusing on user-centric design and code reusability.",
+      // "Researched 3rd party libraries before usage to avoid technical debt, and refactoring codes to the best practices.",
+      "Working closely with a diverse and agile team members, sharing ideas that can lead to company's growth",
+    ],
+  },
+  {
     title: "Software Developer",
     company: "Clinify INC",
     location: "Alberta, Canada (Remote).",
     start: "Apr 2022",
-    end: "Sept 2023",
+    end: "Sep 2023",
     description: [
       "Worked closely with the backend developers to integrate GraphQL APIs, ensuring seamless communication between the frontend and backend systems.",
       "Collaborated with UI/UX design team members to improve existing applications and implement new feature developments.",
-      "Built extensive test coverage with Jest for new features.",
     ],
   },
   {
@@ -42,37 +69,31 @@ export const EXPERIENCES = [
     start: "Sep 2020",
     end: "May 2022",
     description: [
-      "Updated the company's website with responsive layouts and page optimization resulting in a faster load time.",
       "Developed new React components for the staff management web application, increasing the HR team's work efficiency.",
       "Created a UI and UX-friendly web application to manage customer relationships and records, achieving over 80% customer satisfaction and improving contact agent's recovery rate.",
-    ],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Freelance",
-    location: "Ikeja, Lagos.",
-    start: "Mar 2020",
-    end: "Jan 2023",
-    description: [
-      "Successfully completed 8+ projects, showcasing diverse software solutions for clients across various industries.",
-      "Maintained 80% satisfaction rate by delivering high-quality, customized applications on time and within budget.",
-      "Established effective remote collaboration practices, enabling smooth communication and seamless project execution with clients.",
     ],
   },
 ];
 
 export const SKILLS = [
-  "JavaScript",
-  "HTML",
-  "CSS",
-  "Tailwind CSS",
-  "TypeScript",
-  "React.JS",
-  "Next.JS",
-  "Redux",
-  "React Native",
-  "GraphQL",
-  "Three.JS",
-  "GIT (Version Control)",
-  "Jest (Unit Testing)",
+  {
+    label: "Languages",
+    list: ["TypeScript", "JavaScript", "HTML/CSS", "Python", "GLSL"],
+  },
+  {
+    label: "Libraries",
+    list: [
+      "React.JS",
+      "Next.JS",
+      "Tailwind CSS",
+      "React Native",
+      "GraphQL",
+      "Three.js",
+      "Jest/Vitest",
+    ],
+  },
+  {
+    label: "Tools",
+    list: ["VSCode", "Figma", "Blender", "Android Studio", "PyCharm"],
+  },
 ];
