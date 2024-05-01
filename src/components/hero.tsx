@@ -12,9 +12,9 @@ const HeroSection = () => {
       }}
     >
       <View style={{ lineHeight: 0.9 }}>
-        <Text style={{ fontSize: 35, fontWeight: "semibold" }}>JOHN</Text>
+        <Text style={{ fontSize: 39, fontFamily: "Times-Bold" }}>JOHN</Text>
         <Text style={{ fontSize: 35 }}>ADIBE</Text>
-        {/* <Text style={{ fontSize: 15, marginTop: 15 }}>Frontend Developer</Text> */}
+        <Text style={{ fontSize: 15, marginTop: 15 }}>Frontend Developer</Text>
       </View>
       <View style={{ gap: 5, alignItems: "flex-end", marginTop: 9 }}>
         {CONTACTS.map((item, idx) => (

@@ -9,7 +9,8 @@ import {
 export const CONTACTS = [
   { detail: "(234) 814-172-6099", icon: PhoneIcon },
   {
-    detail: "john.adibe.ebube@gmail.com",
+    detail: "johnadibe450@gmail.com",
+    // detail: "john.adibe.ebube@gmail.com",
     icon: EnvelopeIcon,
   },
   {
@@ -17,7 +18,7 @@ export const CONTACTS = [
     icon: LinkIcon,
   },
   {
-    detail: "Anambra, Nigeria.",
+    detail: "Lagos, Nigeria.",
     icon: LocationIcon,
   },
 ];
@@ -28,14 +29,15 @@ export const EDUCATIONS = [
     school: "University of Nigeria, Nsukka",
     duration: "Jul 2017",
     grade: "Second Class Honours (Upper Division)",
-    project:
-      "Accessing the usability of questioning skills in teaching and learning of Mathematics in senior secondary schools at Onitsha South L.G.A Anambra State.",
+    project: "",
+    // project:
+    //   "Accessing the usability of questioning skills in teaching and learning of Mathematics in senior secondary schools at Onitsha South L.G.A Anambra State.",
   },
-  {
-    certificate: "West African Examinations Council (WAEC)",
-    school: "Tansi International College, Awka",
-    duration: "Jun 2013",
-  },
+  // {
+  //   certificate: "West African Examinations Council (WAEC)",
+  //   school: "Tansi International College, Awka",
+  //   duration: "Jun 2013",
+  // },
 ];
 
 export const EXPERIENCES = [

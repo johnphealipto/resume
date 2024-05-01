@@ -40,7 +40,7 @@ const CertificationSection = () => {
             Verified by Credly
           </Link>
         </View>
-        <View style={[GLOBAL_STYLES.text, { gap: 3 }]}>
+        {/* <View style={[GLOBAL_STYLES.text, { gap: 3 }]}>
           <View
             style={{ flexDirection: "row", justifyContent: "space-between" }}
           >
@@ -61,7 +61,7 @@ const CertificationSection = () => {
             <Text>Sep 2014</Text>
           </View>
           <Text>AfriHUB Alumni Association</Text>
-        </View>
+        </View> */}
       </View>
     </View>
   );

@@ -5,7 +5,7 @@ const SectionTitle = ({ title }: { title: string }) => (
     <Text
       style={{
         fontSize: 14,
-        fontWeight: "semibold",
+        fontFamily: "Times-Bold",
         textTransform: "uppercase",
       }}
     >

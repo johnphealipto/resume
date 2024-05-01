@@ -5,7 +5,7 @@ export const GLOBAL_STYLES = StyleSheet.create({
   body: {
     backgroundColor: COLORS.white,
     color: COLORS.dark,
-    fontFamily: "Rubik",
+    fontFamily: "Times-Roman",
     paddingVertical: 15,
     paddingHorizontal: 25,
     lineHeight: 1.25,

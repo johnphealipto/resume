@@ -13,7 +13,7 @@ const SkillSection = () => {
             key={idx}
             style={{ flexDirection: "row", flexWrap: "wrap", gap: 3 }}
           >
-            <Text style={{ fontSize: 10, fontWeight: "medium" }}>
+            <Text style={{ fontSize: 10, fontFamily: "Times-Bold" }}>
               {skill.label}:{" "}
             </Text>
             {skill.list.map((item, id) => (
