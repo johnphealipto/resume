@@ -19,7 +19,7 @@ const ProfessionalResume = () => {
       <Page
         style={[
           GLOBAL_STYLES.body,
-          { paddingVertical: 25, paddingHorizontal: 30 },
+          { paddingVertical: 30, paddingHorizontal: 30 },
         ]}
         size="A4"
         wrap
@@ -28,8 +28,8 @@ const ProfessionalResume = () => {
           <View style={{ paddingRight: 20, width: 375, gap: 30 }}>
             <HeroSection />
             <ExperienceSection />
-            <EducationSection />
             <CertificationSection />
+            <EducationSection />
           </View>
           <View
             style={{
@@ -46,10 +46,10 @@ const ProfessionalResume = () => {
                 style={[GLOBAL_STYLES.text, { lineHeight: 1.45 }]}
                 hyphenationCallback={(word) => [word]}
               >
-                Frontend developer with three years of experience building
+                Frontend developer with four years of experience building
                 scalable web and mobile applications, with a particular passion
-                for developing innovative UI & UX solutions. Experienced in
-                Typescript and Python.
+                for developing quality interactive solutions. Experienced in
+                Typescript, Next.JS & React Native.
               </Text>
             </View>
             <SkillSection />

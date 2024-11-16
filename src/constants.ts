@@ -27,7 +27,7 @@ export const EDUCATIONS = [
   {
     certificate: "B.Sc / Mathematics Education",
     school: "University of Nigeria, Nsukka",
-    duration: "Jul 2017",
+    duration: "",
     grade: "Second Class Honours (Upper Division)",
     project: "",
     // project:
@@ -80,7 +80,7 @@ export const EXPERIENCES = [
 export const SKILLS = [
   {
     label: "Languages",
-    list: ["TypeScript", "JavaScript", "HTML/CSS", "Python", "GLSL"],
+    list: ["TypeScript", "HTML/CSS", "Python"],
   },
   {
     label: "Libraries",
@@ -89,13 +89,13 @@ export const SKILLS = [
       "Next.JS",
       "Tailwind CSS",
       "React Native",
+      "Redux",
       "GraphQL",
-      "Three.js",
       "Jest/Vitest",
     ],
   },
   {
     label: "Tools",
-    list: ["VSCode", "Figma", "Blender", "Android Studio", "PyCharm"],
+    list: ["VSCode", "Figma", "Android Studio", "Xcode", "Blender"],
   },
 ];
